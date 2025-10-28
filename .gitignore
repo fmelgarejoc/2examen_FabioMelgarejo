@@ -1,0 +1,14 @@
+# Laravel
+backend/.env
+backend/storage/framework/cache/
+backend/storage/framework/views/
+backend/vendor/
+
+# Angular
+frontend/node_modules/
+frontend/dist/
+frontend/.angular/cache
+
+# General
+.DS_Store
+*.log
