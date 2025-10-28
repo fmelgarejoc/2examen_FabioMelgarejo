@@ -8,10 +8,13 @@ import { Observable } from 'rxjs';
 export class Empleadoservice {
   private base = 'http://127.0.0.1:8000/api/empleados';
 
-  constructor(private http:HttpClient){
+  constructor(private http: HttpClient) { }
 
-  }
-  listarEmpleados():Observable<any[]>{
+  listarEmpleados(): Observable<any[]> {
     return this.http.get<any[]>(this.base);
+  }
+
+  agregarEmpleado(empleado: any): Observable<any> {
+    return this.http.post<any>(this.base, empleado);
   }
 }
